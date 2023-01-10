@@ -10,7 +10,7 @@
 <channel>
 	<title>BertugsHub</title>
 	<atom:link href="/https://bertugs.github.io/feed/?simply_static_page=955" rel="self" type="application/rss+xml" />
-	<link>/https://bertugs.github.io</link>
+	<link>/https://bertugs.github.io/</link>
 	<description></description>
 	<lastBuildDate>Tue, 10 Jan 2023 19:49:33 +0000</lastBuildDate>
 	<language>tr</language>
