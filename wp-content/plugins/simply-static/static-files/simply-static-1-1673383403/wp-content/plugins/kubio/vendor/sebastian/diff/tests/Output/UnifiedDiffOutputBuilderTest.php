@@ -1,0 +1,5 @@
+<br>
+<b>Fatal error</b>:  Uncaught Error: Class &quot;PHPUnit\Framework\TestCase&quot; not found in C:\xampp\htdocs\bertugs.github.io\wp-content\plugins\kubio\vendor\sebastian\diff\tests\Output\UnifiedDiffOutputBuilderTest.php:23
+Stack trace:
+#0 {main}
+  thrown in <b>C:\xampp\htdocs\bertugs.github.io\wp-content\plugins\kubio\vendor\sebastian\diff\tests\Output\UnifiedDiffOutputBuilderTest.php</b> on line <b>23</b><br>
