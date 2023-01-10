@@ -1,2 +1,0 @@
-<br>
-<b>Fatal error</b>:  Trait &quot;_\internal\Traits\CacheDataTrait&quot; not found in <b>C:\xampp\htdocs\bertugs.github.io\wp-content\plugins\kubio\vendor\lodash-php\lodash-php\src\ListCache.php</b> on line <b>21</b><br>

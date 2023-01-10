@@ -1,2 +1,0 @@
-<br>
-<b>Fatal error</b>:  Trait &quot;IlluminateAgnostic\Arr\Support\Traits\EnumeratesValues&quot; not found in <b>C:\xampp\htdocs\bertugs.github.io\wp-content\plugins\kubio\vendor\pragmarx\ia-arr\src\Support\LazyCollection.php</b> on line <b>12</b><br>
