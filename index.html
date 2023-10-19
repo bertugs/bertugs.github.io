@@ -1,779 +1,1927 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Basic Page Needs -->
+  <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
 
-  <title>Bertugs</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Bertug Portfolio</title>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!--  -->
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.10.0
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Theme Style -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+  
+  <!-- Animation Text -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/splt.css" />
+
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+
+  <!-- Colors -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- ios support -->
+  <link rel="apple-touch-icon" href="images/logo.png">
+   
+  <meta name="apple-mobile-web-app-status-bar" content="#B4D700">
+  <meta name="theme-color" content="#B4D700">
 </head>
 
-<body>
+<body class="tf-fullscreen is-dark">
+    <!-- preloaded -->
+    <div id="preloader">
+      <div class="preload-container"></div>
+    </div>
+    <!-- /preload -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+    <!-- Header -->
+    <header id="header" class="header header-fixed">
+    <div class="tf-container">
+      <div class="row is-relative">
+        <div class="col-4">
+          <a href="index.html" class="logo">
+            <img id="logo_header" src="images/logo.png" alt="image">
+            <img id="logo_header-2" src="images/logo-dark.png" alt="images">
+          </a>
+        </div>
+        <div class="col-8">
+          <div class="inner-header">
+            <div class="inner-header-left">
+              <h3><a href="index.html">HOME</a></h3>
+              <h3><a href="#contact" class="type-2 wedo-link-item">Contact</a> <span class="flicker">!</span></h3>
+            </div>
+            <div class="inner-header-right">
+              <div class="choose-themes day">
+                <div class="sun moon">
+                </div>
+              </div>
+              <div class="wd-icon-box">
+                <a href="tel:012345678" class="icon-phone"></a>
+              </div>
+              <div id="nav-filter" class="wd-icon-box active">
+                <div class="nav-menu">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- popup -->
+        <div class="menu-popup">
+          <div class="modal-menu__backdrop"></div>
+          <div class="widget-filter">
 
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <div class="menu-left">
+              <a href="index.html"><img src="images/logo-menu.png" alt="img"></a>
+              <div class="contact">
+                <div class="contact-phone">
+                  <p>Contact Phone</p>
+                  <h4>+90 545 954 65 66</h4>
+                </div>
+                <div class="contact-mail">
+                  <p>Contact Mail</p>
+                  <h4>mailbertug@gmail.com</h4>
+                </div>
+              </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            </div>
+            <div class="main-menu">
+              <p><a class="active trick" href="index.html">HOME</a></p>
+              <ul class="menu-content filter-menu">
+                <li class="home-menu"><a class="active" href="#home" data-splitting>HOME</a></li>
+                <li><a href="#about" data-splitting>ABOUT</a></li>
+                <li><a href="#service" data-splitting>SERVICE</a></li>
+                <li><a href="#pricing" data-splitting>PRICE TABLE</a></li>
+                <li><a href="#skill" data-splitting>SKILLS</a></li>
+                <li><a href="#portfolio" data-splitting>PORTFOLIO</a></li>
+                <li><a href="#blog" data-splitting>BLOG</a></li>
+                <li><a href="#testimonials" data-splitting>TESTIMONIAL</a></li>
+                <li><a href="#contact" data-splitting>CONTACT</a></li>
+              </ul>
+            </div>
+            
+
+            <div class="menu-right">
+              <div class="icon-close">
+                <span data-splitting>CLOSE</span> 
+                <a class="title-button-group"></a>
+              </div>
+              <div class="contact">
+                <div class="contact-phone">
+                  <p>Contact Phone</p>
+                  <h4>+90 545 954 65 66</h4>
+                </div>
+                <div class="contact-mail">
+                  <p>Contact Mail</p>
+                  <h4>mailbertug@gmail.com</h4>
+                </div>
+              </div>
+              <ul class="wd-social-icon">
+                <li><a href="#"><i class="icon-facebook1"></i></a></li>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Iam Bertug</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+    </header>
+    <!-- End header -->
+  
+    <!-- home -->
+    <section>
+    <div class="tf-container">
+      <div class="wrapper wrap-home" data-enter="fadeInUp" data-exit="">
+        <div class="group-4-8">
+          <div class="cl4">
+            <div class="sticky-sidebar">
+              <div class="avatar">
+                <img src="images/avatar/avt-1.png" alt="image">
+              </div>
+              <div class="profile">
+                <div class="top">
+                  <h3><a href="#">Hy! I’m Bertug The Designer</a></h3>
+                  <div class="wrap-text">
+                    <span class="auto-type">UX/UI Designer</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="mail"><a href="#">mailbertug@gmail.com</a></p>
+                  <p>Bertug's Portfolio</p>
+                  <ul class="wd-social-icon m-top">
+                    <li><a href="#"><i class="icon-facebook1"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <a class="btn-profile active wedo-link-item" href="#contact" >Contact!<span class="icon-arrow"></span></a>
+                  <a class="btn-profile wedo-link-item" href="#contact">Download CV <span class="icon-arrow"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- home -->
+          <div class="cl8">
+            <div id="home" class="home-box wedo-section animated">
+              <div class="top-content">
+                <div class="wrap-title" >
+                  <div class="mt35">
+                    <div class="note">
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>There I’m</p>
+                    </div>
+                    <div class="box-title">
+                      <h1 class="title">
+                        We Have Design Experience UX/UI.
+                      </h1>
+                      
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <a href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.19795 1.2835C1.19787 1.28171 1.19791 1.27976 1.19815 1.27766L10.8503 1.27766C11.8768 1.27766 12.8001 2.22389 12.8001 3.49946V10.4984C12.8001 11.7739 11.8768 12.7202 10.8503 12.7202H5.25087C4.22438 12.7202 3.30112 11.7739 3.30112 10.4984V5.10376C3.30112 4.8874 3.23562 4.70918 3.18833 4.61365L3.17937 4.59555L3.16898 4.57823L1.20454 1.30396C1.20453 1.30394 1.20451 1.30391 1.20449 1.30388C1.19982 1.29605 1.1982 1.28919 1.19795 1.2835Z" stroke="var(--primary-bg-light)"/>
+                      </svg>
+                      Let’s Chat</a>
+    
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="content-2">
+                  <div class="content-left">
+                      <div class="ct-top">
+                          <div class="inner1">
+                            <a href="#"><img class="img-1" src="images/home/img-1.png" alt="image"></a>
+                          </div>
+                          <div class="inner2">
+                            <a href="#about" class="img-about wedo-link-item"><img src="images/home/img-2.png" alt="image"> <h4>About Us</h4></a>
+                          </div>
                       </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Bertuğ</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Game Devoloper</span></p>
-                        <p><span class="title-s">Email: </span> <span>mailbertug@gmail.com</span></p>
-                        <!-- <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p> -->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>UNITY</span> <span class="pull-right">33%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>C#</span> <span class="pull-right">25%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <!-- <span>PHP</span> <span class="pull-right">50%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Paragraph 1
-                    </p>
-                    <p class="lead">
-                      Paragraph 2
-                    </p>
-                    <p class="lead">
-                      Paragraph 3
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">UNITY</h2>
-                <p class="s-description text-center">
-                  I have 1 year of experience in Unity.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Photography</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--<div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Graphic Design</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Marketing Services</h2>
-                <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>-->
-
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Xavi Alonso</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Marta Socrate</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </section><!-- End Blog Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
+                      <div class="ct-middle wow fadeInUp">
+                        <div class="inner1">
+                          <a href="#portfolio" class="img-portfolio wedo-link-item"><img src="images/home/img-3.png" alt="image"><h4><span>OUR</span><br><span>Portfolio</span></h4></a>
                         </div>
-                      </form>
+                        <div class="inner2">
+                          <a href="#" class="img-1"><img src="images/home/img-5.png" alt="image"> </a>
+                          <a href="#" class="img-1"><img src="images/home/img-4.png" alt="image"> </a>
+                          <a href="#"><img src="images/home/img-6.png" alt="image"> </a>
+                        </div>
+                      </div>
+                      <div class="ct-bottom">
+                          <div class="inner1">
+                            <a href="#"><img src="images/home/img-11.png" alt="image"></a>
+                          </div>
+                          <div class="inner2">
+                            <a href="#testimonials" class="wedo-link-item"><h4>What Client </h4><p>Says?</p></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="content-right">
+                    <div class="inner st1">
+                      <a href="#"><img src="images/home/img-7.png" alt="image"></a>
+                    </div>
+
+                    <div class="inner st2">
+                      <a href="#skill" class="wedo-link-item"><img src="images/home/img-8.png" alt="image"><h4><span>OUR</span><br><span>BEST SKILL</span></h4></a>
+                    </div>
+
+                    <div class="inner st3">
+                      <a href="#blog" class="wedo-link-item"><img src="images/home/img-9.png" alt="image"><h4>NEWS BLOG</h4></a>
+                    </div>
+
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- end -->
+          <!-- about us -->
+          <div class="cl8">
+              <div class="wedo-section" id="about" >
+                <div class="about-wrap">
+                <div class="top-content">
+                <div class="wrap-title st-about">
+                  <div>
+                  <div class="note">
+                    <span class="icon-user icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>About Me</p>
+                  </div>
+                  <h1 class="title">
+                    About Me<span>!</span>
+                  </h1>
+                </div>
+                  <div class="box-title">
+                    
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      <img class="logo" src="images/logo-2.png" alt="image">
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
+  
+                  
+                </div>
+                <p class="mb15">
+                  I'am the king!
+                </p>
+                <p>I'am Bertug!</p>
+                </div>
+                <div class="content">
+  
+                    <div class="inner-top">
+                      <div class="content-left br-left">
+                        <h4>Name</h4>
+                        <p>Bertug</p>
+                      </div>
+                      <div class="content-right">
+                        <h4>Phone</h4>
+                        <p>+90 545 954 65 66</p>
+                      </div>
                     </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                        expedita aperiam aliquid at.
-                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                        mollitia inventore?
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
-                        <li><span class="bi bi-envelope"></span> contact@example.com</li>
+                    <div class="inner-bottom">
+                      <div class="content-left br-left br-bottom">
+                        <h4>Office</h4>
+                        <p>Adana/Turkey</p>
+                      </div>
+                      <div class="content-right br-bottom">
+                        <h4>Experience</h4>
+                        <p>5 Years</p>
+                      </div>
+                    </div>
+                </div>
+              
+                
+                </div>
+           
+                <div class="resume-wrap">
+                <div class="wrap-title">
+                  <div class="note">
+                    <span class="icon-user icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>Our RESUME</p>
+                  </div>
+                  <div class="box-title">
+                    <h1 class="title">
+                      Resume Me<span>!</span>
+                    </h1>
+  
+                  </div>
+  
+                  <p>
+                    More information of me:
+                  </p>
+  
+                </div>
+                <div class="row" >
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down" >
+                      <ul class="inner-left">
+                        <li>Become</li>
+                        <li>2016</li>
                       </ul>
+                      <h4 class="inner-right"><a href="#"> Bachelor Degree Of Design</a></h4>
                     </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down" >
+                      <ul class="inner-left">
+                        <li>Princeton University</li>
+                        <li>2018</li>
                       </ul>
+                      <h4 class="inner-right"><a href="#"> Certificate of web Development training</a></h4>
                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down">
+                      <ul class="inner-left">
+                        <li>Defodil University</li>
+                        <li>2020</li>
+                      </ul>
+                      <h4 class="inner-right"><a href="#"> Certificate of UX/UI training</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down">
+                      <ul class="inner-left">
+                        <li>Startart University</li>
+                        <li><span>(Running)</span> 2023</li>
+                      </ul>
+                      <h4 class="inner-right"><a href="#"> Certificate of Java training</a></h4>
+                    </div>
+                  </div>
+                </div>
+  
+                </div>
+            
+                <div class="banner-light">
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-9.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="95"></a><span>% Figma</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-8.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="65"></a><span>% Bootstrap</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-2.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="85"></a><span>% Sketch</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-7.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="90"></a><span>% XD</span></h4>
+                  </div>
+                </div>
+                <div class="banner banner-dark">
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-9.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="95"></a><span>% Figma</span></h4>
+                  </div>
+                    <div class="item wrap-counter">
+                    <img src="images/service/img-8.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="65"></a><span>% Bootstrap</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-2.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="85"></a><span>% Sketch</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-7.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="90"></a><span>% XD</span></h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- end -->
+          <!-- service -->
+          <div class="cl8">
+            <div class="service-wrap wedo-section counter-scroll" id="service">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-settings icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Service Hare</p>
+                    </div>
+                    <h1 class="title">
+                      Best Of Service<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                    
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+                  
+                </div>
+                <p>
+                  Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                  mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="tf-service ">
+                    <div class="title">
+                      <p>Themeforest Project</p>
+                      <span>(35 - Project)</span>
+                    </div>
+                    <div class="content">
+                      <h4><a href="#">Figma Files and Templates</a></h4>
+                      <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi.</p>
+                    </div>
+                    <div class="image">
+                      <img src="images/service/img-1.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="col-lg-12">
+                  <div class="tf-service">
+                    <div class="title">
+                      <p>graphicriver Project</p>
+                      <span>(35 - Project)</span>
+                    </div>
+                    <div class="content">
+                      <h4><a href="#">Sketch Files and Templates</a></h4>
+                      <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi.</p>
+                    </div>
+                    <div class="image">
+                      <img src="images/service/img-2.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="col-lg-12">
+                  <div class="tf-service">
+                    <div class="title">
+                      <p>photodune Project</p>
+                      <span>(35 - Project)</span>
+                    </div>
+                    <div class="content">
+                      <h4><a href="#">XD Files and Templates</a></h4>
+                      <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi.</p>
+                    </div>
+                    <div class="image">
+                      <img src="images/service/img-3.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="col-lg-12">
+                  <div class="tf-service animate-down" >
+                    <div class="title">
+                      <p>3docean Project</p>
+                      <span>(35 - Project)</span>
+                    </div>
+                    <div class="content">
+                      <h4><a href="#">Bootstrap Files and Templates</a></h4>
+                      <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi.</p>
+                    </div>
+                    <div class="image">
+                      <img src="images/service/img-4.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 5 -->
+                <div class="col-lg-12">
+                  <div class="tf-service animate-down">
+                    <div class="title">
+                      <p>codecanyon Project</p>
+                      <span>(35 - Project)</span>
+                    </div>
+                    <div class="content">
+                      <h4><a href="#">PSD Files and Templates</a></h4>
+                      <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi.</p>
+                    </div>
+                    <div class="image">
+                      <img src="images/service/img-5.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 6 -->
+                <div class="col-lg-12">
+                  <div class="tf-service last animate-down">
+                    <div class="title">
+                      <p>Web Themes & Templates</p>
+                      <span>(35 - Project)</span>
+                    </div>
+                    <div class="content">
+                      <h4><a href="#">HTML Files and Templates </a></h4>
+                      <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi.</p>
+                    </div>
+                    <div class="image">
+                      <img src="images/service/img-6.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <div class="col-lg-12">
+                  <a class="btn-profile btn-service" href="#">Load More <span class="icon-arrow"></span></a>
+
+                </div>
+
+                <!-- count -->
+                <div class="col-4">
+                  <div class="tf-count">
+                    <div class="count">
+                      <h4 class="wrap-counter"><span class="number" data-from="0" data-to="31.2" data-speed="10000">31.2</span>K</h4>    
+                    </div>
+                    <ul class="count-desc">
+                      <li>Product Sale Per Day</li>
+                      <li>Using Out Tools.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="tf-count">
+                    <div class="count">
+                      <h4 class="wrap-counter"><span class="number" data-from="0" data-to="2.3" data-speed="5000">2.3</span>M</h4>    
+                    </div>
+                    <ul class="count-desc">
+                      <li>Downloaded Total In</li>
+                      <li>2018-2022.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="tf-count center">
+                    <div class="count">
+                      <h4 class="wrap-counter"><span class="number" data-from="0" data-to="50" data-speed="10000">50</span>M</h4>    
+                    </div>
+                    <ul class="count-desc">
+                      <li>Trusted By Customers</li>
+                      <li>Worldwide Over.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <!-- end -->
+          <!-- price-table -->
+          <div class="cl8">
+            <div class="pricing-wrap wedo-section" id="pricing">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-vector-4 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Price Table</p>
+                    </div>
+                    <h1 class="title">
+                      Price Table<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae
+                  enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              
+              <div class="group-col-2 content">
+                <div class="cl2">
+                  <div class="box-pricing">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#"> Regular Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-vector-3 icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-pricing">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#">Sliver Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-dollar icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-pricing cart">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#">Gold Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-vector-4 icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-pricing">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#">Multi Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-vector-2 icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
             </div>
           </div>
+          <!-- end -->
+          <!-- skill -->
+          <div class="cl8">
+            <div class="skill-wrap wedo-section wedo-section-skill" id="skill">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-6 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Our Skill</p>
+                    </div>
+                    <h1 class="title">
+                      The skills I have so far and the market for my skills<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                    
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+                 
+                </div>
+                <p>
+                  Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.Integer non sapien justo. Fusce feugiat viverra tellus, eu interdum enim varius nec. Etiam laoreet augue mauris, sit amet convallis nibh congue id. Fusce justo leo, imperdiet a massa id, lacinia mollis diam. Vestibulum commodo euismod mauris. Suspendisse accumsan volutpat nibh at dictum. Cras condimentum leo justo, ut venenatis mauris tempor.
+                </p>
+              </div>
+              
+                <div class="tf-skill-bar tf-progress-bar">
+                    <div class="progress-item ">
+                        <h4>design</h4>
+                        <div class="inner-skill">
+                              <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="70"></div>
+                        </div>
+                    </div>
+                        
+                    <div class="progress-item ">
+                        <h4>art direction</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="80"></div>
+                        </div>
+                    </div>
+                        
+                    <div class="progress-item">
+                        <h4>branding</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="73"></div>
+                        </div>   
+                    </div>  
+                        
+                    <div class="progress-item">
+                        <h4>website design</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="60"></div>
+                        </div>                    
+                    </div>
+                        
+                    <div class="progress-item">
+                        <h4>UX/UI design</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="70"></div>
+                        </div>
+                    </div>
+                  <!-- <div class="themesflat-progress style-1 height-10px clearfix">
+                      <h3 class="title">PARTNERSHIP</h3>
+                      <div class="perc-wrap">
+                          <div class="perc"><span>80%</span></div>
+                      </div>
+                      <div class="progress-bg" data-percent="80" data-inviewport="yes">
+                          <div class="progress-animate"></div>
+                      </div>
+                  </div>
+                  <div class="themesflat-progress style-1 height-10px clearfix">
+                      <h3 class="title">FULL SUPPORT</h3>
+                      <div class="perc-wrap">
+                          <div class="perc"><span>90%</span></div>
+                      </div>
+                      <div class="progress-bg" data-percent="90" data-inviewport="yes">
+                          <div class="progress-animate"></div>
+                      </div>
+                  </div>
+                  <div class="themesflat-progress style-1 height-10px clearfix">
+                      <h3 class="title">OPPORTUNITY</h3>
+                      <div class="perc-wrap">
+                          <div class="perc"><span>70%</span></div>
+                      </div>
+                      <div class="progress-bg" data-percent="70" data-inviewport="yes">
+                          <div class="progress-animate"></div>
+                      </div>
+                  </div> -->
+                  
+                </div>
+          
+            </div>
+          </div>
+          <!-- portfolio -->
+          <div class="cl8">
+            <div class="portfolio-wrap wedo-section" id="portfolio">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-7 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Our Portfolio</p>
+                    </div>
+                    <h1 class="title">
+                      Our Portfolio<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                    
+                    <div class="circle-box st-port">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+                  
+                </div>
+                <p class="des-portfolio">Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae
+                  enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              <div class="group-col-2 content">
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-1.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>Figma Design</p>
+                      <h4><a href="#portfolio-v1" class="wedo-link-item">magazine front design 
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-2.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>XD Design</p>
+                      <h4><a href="#portfolio-v2" class="wedo-link-item">Mineral Water Delivery XD Template
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v2" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>PSD Design</p>
+                      <h4><a href="#portfolio-v1" class="wedo-link-item">Health & Medical PSD Template
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-5.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>HTML Design</p>
+                      <h4><a href="#portfolio-v2" class="wedo-link-item">NFT PortFolio Figma Template
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v2" class="wedo-link-item"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 5 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-5.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>WordPress</p>
+                      <h4><a href="#portfolio-v1" class="wedo-link-item">Personal portfolio WP Theme
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 6 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-1.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>PHP Design</p>
+                      <h4><a href="#portfolio-v2" class="wedo-link-item">Real estate group
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v2" class="wedo-link-item"></a> 
+                    
+                  </div>
+                </div>
+                <!-- end -->
+                
+              </div>
+              <!-- widget link -->
+              <ul class="tf-pagination st1">
+                <li><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+                <li><a href="#">01</a></li>
+                <li class="current"><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li class="current"><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- portfolio single V1 -->
+          <div class="cl8">
+            <div class="portfolio-wrap wedo-section" id="portfolio-v1">
+              <div class="top-content">
+                <div class="wrap-title st-po-details">
+                  <div class="note">
+                    <span class="icon-icon-7 icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>Portfolio Details</p>
+                  </div>
+                  <h1 class="title">Portfolio Details<span>.</span></h1>
+                  <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+                </div>
+              </div>
+              <div class="image">
+                <img src="images/blog/blog-3.jpg" alt="images">
+              </div>
+
+              <div class="content">
+                <h3>Software License Management</h3>
+                <p>Mauris ultricies orci in sodales molestie. Nullam et vehicula lacus, euismod gravida tortor. Morbi
+                  ipsum lectus, viverra id vulputate eget, molestie non nunc. Donec mollis accumsan risus, at vestibulum
+                  tortor commodo at. Cras vulputate nisi in consectetur sollicitudin. Vestibulum ut vestibulum justo.
+                  Fusce fringilla ullamcorper elit, a bibendum orci blandit non. Integer porta, nunc ut ornare auctor,
+                  mauris nulla blandit ipsum, a facilisis tortor nisi eget ex.
+                </p>
+                <p>Proin finibus imperdiet nulla, quis euismod nunc gravida eget. Vestibulum iaculis nibh facilisis
+                  felis iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar, molestie in massa.
+                  Quisque ut venenatis nunc, vitae rutrum libero. Duis eget consectetur urna. Ut ut aliquet magna.
+                  Nullam augue nulla, fermentum vel elit eu, posuere vehicula tellus. Orci varius natoque penatibus et
+                  magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="image-box">
+                <img src="images/blog/blog-10.jpg" alt="image">
+                <div class="content-right">
+                  <p>Phasellus dignissim arcu sit amet augue mattis, eget rutrum ex finibus. Morbi blandit luctus nisi, id ornare sem blandit sed. In sed luctus dolor. Integer vitae pretium nunc. Aliquam rutrum lectus.</p>
+                  <ul class="tf-list-price">
+                    <li><i class="icon-checkmark"></i>One-time security check fee: $99.95</li>
+                    <li><i class="icon-checkmark"></i>Elite membership fee: $999.95 per month</li>
+                    <li><i class="icon-checkmark"></i>Coast to domestic flights: from $3,799.95</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="wd-link-blog">
+                <div class="prev-blog">
+                  <a href="#" class="icon-arrow-thin-left"></a>
+                  <div>
+                    <p>Prev Blog</p>
+                    <h3>Cloud Services</h3>
+                  </div>
+
+                </div>
+                <div class="next-blog">
+                  <div>
+                    <p>Next Blog</p>
+                    <h3>IT Consultancy</h3>
+                  </div>
+                  <a href="#" class="icon-arrow-thin-right active"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- portfolio single V2 -->
+          <div class="cl8">
+            <div class="portfolio-wrap wedo-section" id="portfolio-v2">
+              <div class="top-content">
+                <div class="wrap-title st-po-details">
+                  <div class="note">
+                    <span class="icon-icon-7 icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>Portfolio Details</p>
+                  </div>
+                  <h1 class="title">Portfolio Details<span>.</span></h1>
+                  <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+                </div>
+              </div>
+              <div class="group-desc-user">
+                <div class="desc-title">
+                  <ul class="inner-desc">
+                    <li>Category:&emsp; <span>Charity, Food</span></li>
+                    <li>Start Date:&ensp; <span> 05 December, 2023</span></li>
+                  </ul>
+                  <ul class="inner-desc">
+                    <li>Client:&emsp;&ensp; <span> Figma</span></li>
+                    <li class="active">Handover:&ensp; <span> 09 December, 2023</span></li>
+                  </ul>
+                </div>
+                <div class="image">
+                  <img src="images/blog/blog-4.jpg" alt="images">
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Software License Management</h3>
+                <p>Mauris ultricies orci in sodales molestie. Nullam et vehicula lacus, euismod gravida tortor. Morbi
+                  ipsum lectus, viverra id vulputate eget, molestie non nunc. Donec mollis accumsan risus, at vestibulum
+                  tortor commodo at. Cras vulputate nisi in consectetur sollicitudin. Vestibulum ut vestibulum justo.
+                  Fusce fringilla ullamcorper elit, a bibendum orci blandit non. Integer porta, nunc ut ornare auctor,
+                  mauris nulla blandit ipsum, a facilisis tortor nisi eget ex.
+                </p>
+              </div>
+              <ul class="tf-list">
+                <li>+ Brand Development</li>
+                <li>+ UX/UI Design</li>
+                <li>+ Front-end Development</li>
+                <li>+ Copywriting</li>
+                <li>+ Shopify Development</li>
+              </ul>
+              <div class="image">
+                <img src="images/blog/blog-7.jpg" alt="avatar">
+              </div>
+              <p>Proin finibus imperdiet nulla, quis euismod nunc gravida eget. Vestibulum iaculis nibh facilisis felis
+                iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar.
+              </p>
+              <div class="group-img">
+                <div class="inner-img">
+                  <img src="images/blog/blog-8.jpg" alt="image">
+                </div>
+                <div class="inner-img">
+                  <img src="images/blog/blog-9.jpg" alt="image">
+
+                </div>
+              </div>
+              <p class="last-text">
+                Proin finibus imperdiet nulla, quis euismod nunc gravida eget. Vestibulum iaculis nibh facilisis felis iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar, molestie in massa. Quisque ut venenatis nunc, vitae rutrum libero. Duis eget consectetur urna. Ut ut aliquet magna. Nullam augue nulla, fermentum vel elit eu, posuere vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+              <div class="wd-link-blog">
+                <div class="prev-blog">
+                  <a href="#" class="icon-arrow-thin-left"></a>
+                  <div>
+                    <p>Prev Blog</p>
+                    <h3>Cloud Services</h3>
+                  </div>
+                  
+                </div>
+                <div class="next-blog">
+                  <div>
+                    <p>Next Blog</p>
+                    <h3>IT Consultancy</h3>
+                  </div>
+                  <a href="#" class="icon-arrow-thin-right active"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- blog -->
+          <div class="cl8">
+            <div class="contact-wrap wedo-section" id="blog">
+              <div class="top-content">
+                <div class="wrap-title st-blog">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-9 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Blogs & News</p>
+                    </div>
+                    <h1 class="title">
+                      Latest News<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title ">
+                    
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae
+                  enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              <div class="group-col-2 content">
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-1.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                            
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-2.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-11.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-12.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a> 
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a> 
+
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 5 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-5.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 6 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-13.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                      
+                        <h3><a href="#blog-details" class="wedo-link-item ">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                     
+                      
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a> 
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+              <!-- widget link -->
+             
+                <ul class="tf-pagination">
+                  <li><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+                  <li><a href="#">01</a></li>
+                  <li class="current"><a href="#">02</a></li>
+                  <li><a href="#">03</a></li>
+                  <li class="current"><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+                </ul>
+              
+            </div>
+          </div>
+          <!-- end -->
+          <!-- blog - details -->
+          <div class="cl8">
+            <div class="blog-wrap wedo-section" id="blog-details">
+              <div class="top-content">
+                <div class="wrap-title st-blog-details">
+                  <div class="note">
+                    <span class="icon-icon-9 icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>Blog Details</p>
+                  </div>
+                  <h1 class="title">Blog Details<span>.</span>
+                  </h1>
+                  <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+                </div>
+              </div>
+              <div class="image">
+                <img src="images/blog/blog-6.jpg" alt="images">
+              </div>
+              <div class="content">
+                <div class="post">
+                  <div class="user-post">
+                    <div class="thumb">
+                      <img src="images/avatar/avt-2.jpg" alt="image">
+                      <div class="author">
+                        <span>By-</span>
+                        <span>Wedo</span>
+                      </div>
+                    </div>
+                    <ul class="view">
+                      <li><i class="icon-cmt"></i>&ensp; 23</li>
+                      <li><i class="icon-view"></i>&ensp; 503</li>
+                    </ul>
+                  </div>
+                  <a href="#" class="date-post">
+                    <span class="icon-calendar"></span>
+                    <span>03/ 01/ 2023</span>
+                  </a>
+                </div>
+                <h3>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.</h3>
+                <p>Mauris ultricies orci in sodales molestie. Nullam et vehicula lacus, euismod gravida tortor. Morbi
+                  ipsum lectus, viverra id vulputate eget, molestie non nunc. Donec mollis accumsan risus, at vestibulum
+                  tortor commodo at. Cras vulputate nisi in consectetur sollicitudin. Vestibulum ut vestibulum justo.
+                  Fusce fringilla ullamcorper elit, a bibendum orci blandit non. Integer porta, nunc ut ornare auctor,
+                  mauris nulla blandit ipsum, a facilisis tortor nisi eget ex.
+                </p>
+                <div class="text">
+                  <span class="icon-quotes-left"></span>
+                    <p>Tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id to your hospital Phasellus ac consequat turpis, sit amet fermentum nulla. Donec dignissim augue nunc.</p>
+                </div>
+                <p>Euismod nunc gravida eget. Vestibulum iaculis nibh facilisis felis iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar, molestie in massa. Quisque ut venenatis nunc, vitae rutrum libero. Duis eget consectetur urna. Ut ut aliquet magna. Nullam augue nulla, fermentum vel elit eu, posuere vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <ul class="tf-list-price">
+                  <li><i class="icon-checkmark"></i>One-time security check fee: $99.95</li>
+                  <li><i class="icon-checkmark"></i>Elite membership fee: $999.95 per month</li>
+                  <li><i class="icon-checkmark"></i>Coast to domestic flights: from $3,799.95</li>
+                </ul>
+                <div class="wd-user-post">
+                  <div class="avatar">
+                    <img src="images/avatar/avt-8.jpg" alt="image">
+                  </div>
+                  <div class="profile-cart">
+                    <div class="title">
+                      <h3>Towkibu Rahman</h3>
+                      <ul class="social">
+                        <li><a href="#"><i class="icon-facebook1"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                    <p>
+                      Fusce condimentum enim vestibulum libero gravida, ut accumsan quam bibendum. Curabitur gravida faucibus est sit amet cursus. Duis accumsa vel arcu pretium viverra.
+                    </p>
+                  </div>
+
+                </div>
+                <div class="wd-link-blog">
+                  <div class="prev-blog">
+                    <a href="#" class="icon-arrow-thin-left"></a>
+                    <div>
+                      <p>Prev Blog</p>
+                      <h3>Cloud Services</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="next-blog">
+                    <div>
+                      <p>Next Blog</p>
+                      <h3>IT Consultancy</h3>
+                    </div>
+                    <a href="#" class="icon-arrow-thin-right active"></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="wd-user-cmt">
+                <div class="title-cmt">
+                  <h3>02 Comments</h3>
+                  <p>Nunc velit metus, volutpat elementum euismod eget, cursus nec nunc.</p>
+                </div>
+                <div class="item-cmt">
+                  <img src="images/avatar/avt-9.jpg" alt="avatar">
+                  <div class="comment-right">
+                    <h3>Monsur Rahman Lito</h3>
+                    <p>Phasellus ac consequat turpis, sit amet fermentum nulla. Donec dignis
+                      nunc. Praesent bibendum erat ac lectus molestie lobortis.</p>
+                  </div>
+                </div>
+                <div class="item-cmt m-left-1">
+                  <img src="images/avatar/avt-10.jpg" alt="avatar">
+                  <div class="comment-right">
+                    <h3>Monsur Rahman Lito</h3>
+                    <p>Phasellus ac consequat turpis, sit amet fermentum nulla. Donec dignissim augue nunc. Praesent ac lectus molestie lobortis.</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="wd-post-comment">
+                <div class="title-cmt">
+                  <h3>Post Comments</h3>
+                  <p>Nunc velit metus, volutpat elementum euismod eget, cursus nec nunc.</p>
+                </div>
+                <form method="post">
+                  <div class="group-input">
+                    <div class="input">
+                      <label>Your Name</label>
+                      <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input">
+                      <label>Your Mail</label>
+                      <input type="text" placeholder="infoflex@info.com">
+                    </div>
+                  </div>
+                  <div class="textarea">
+                    <label>Your Message</label>
+                    <textarea placeholder="Write Your Message"></textarea>
+                  </div>
+                  <p><span>*</span>&nbsp; Call us 24/7  or fill out the form below to receive a free and confidential initial consultation.</p>
+                  <button type="submit">
+                    Post Comments <span class="icon-arrow"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- testimonials -->
+          <div class="cl8">
+            <div class="testimonials-wrap wedo-section" id="testimonials">
+              <div class="top-content">
+                <div class="wrap-title st-blog">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-10 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>What Client Says?</p>
+                    </div>
+                    <h1 class="title">
+                      Testimonials<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                    
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae
+                  enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              <div class="group-col-2 content st-tes">
+                <div class="cl2">
+                  <div class="box-testimonials">
+                    <div class="inner-top">
+                      <p>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks.
+                        Intei finibus, nissdl atloyoi tempus semper mkola, rokomoni been lectus auctor leo.</p>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                          </div>
+                          <div class="group-rating">
+                            <h4><a href="#">L.Towkibu Pikus</a></h4>
+                            <ul class="list-star">
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li>(5 Reviews)</li>
+                            </ul>
+                          </div>
+                          <span class="icon-mask-group"></span>
+
+                        </div>
+                        
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-testimonials">
+                    <div class="inner-top">
+                      <p>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks.
+                        Intei finibus, nissdl atloyoi tempus semper mkola, rokomoni been lectus auctor leo.</p>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-3.jpg" alt="image">
+                          </div>
+                          <div class="group-rating">
+                            <h4><a href="#">L.Towkibu Pikus</a></h4>
+                            <ul class="list-star">
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li>(5 Reviews)</li>
+                            </ul>
+                          </div>
+                          <span class="icon-mask-group"></span>
+
+                        </div>
+                        
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-testimonials">
+                    <div class="inner-top">
+                      <p>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks.
+                        Intei finibus, nissdl atloyoi tempus semper mkola, rokomoni been lectus auctor leo.</p>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-4.jpg" alt="image">
+                          </div>
+                          <div class="group-rating">
+                            <h4><a href="#">L.Towkibu Pikus</a></h4>
+                            <ul class="list-star">
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li>(5 Reviews)</li>
+                            </ul>
+                          </div>
+                          <span class="icon-mask-group"></span>
+
+                        </div>
+                        
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-testimonials">
+                    <div class="inner-top">
+                      <p>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks.
+                        Intei finibus, nissdl atloyoi tempus semper mkola, rokomoni been lectus auctor leo.</p>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-5.jpg" alt="image">
+                          </div>
+                          <div class="group-rating">
+                            <h4><a href="#">L.Towkibu Pikus</a></h4>
+                            <ul class="list-star">
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li>(5 Reviews)</li>
+                            </ul>
+                          </div>
+                          <span class="icon-mask-group"></span>
+
+                        </div>
+                        
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 5 -->
+                <div class="cl2">
+                  <div class="box-testimonials">
+                    <div class="inner-top">
+                      <p>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks.
+                        Intei finibus, nissdl atloyoi tempus semper mkola, rokomoni been lectus auctor leo.</p>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-6.jpg" alt="image">
+                          </div>
+                          <div class="group-rating">
+                            <h4><a href="#">L.Towkibu Pikus</a></h4>
+                            <ul class="list-star">
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li>(5 Reviews)</li>
+                            </ul>
+                          </div>
+                          <span class="icon-mask-group"></span>
+
+                        </div>
+                        
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 6 -->
+                <div class="cl2">
+                  <div class="box-testimonials">
+                    <div class="inner-top">
+                      <p>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks.
+                        Intei finibus, nissdl atloyoi tempus semper mkola, rokomoni been lectus auctor leo.</p>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-7.jpg" alt="image">
+                          </div>
+                          <div class="group-rating">
+                            <h4><a href="#">L.Towkibu Pikus</a></h4>
+                            <ul class="list-star">
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li class="icon-star"></li>
+                              <li>(5 Reviews)</li>
+                            </ul>
+                          </div>
+                          <span class="icon-mask-group"></span>
+
+                        </div>
+                        
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+              <!-- widget link -->
+             
+                <ul class="tf-pagination st1 st-tes">
+                  <li><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+                  <li><a href="#">01</a></li>
+                  <li class="current"><a href="#">02</a></li>
+                  <li><a href="#">03</a></li>
+                  <li class="current"><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+                </ul>
+              
+            </div>
+          </div>
+          <!-- end -->
+          <!-- contact -->
+          <div class="cl8">
+            <div class="contact-wrap wedo-section" id="contact">
+              <div class="top-content">
+                <div class="wrap-title st-blog">
+                  <div>
+                    <div class="note">
+                      <span class="icon-note icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Contact Us</p>
+                    </div>
+                    <h1 class="title">
+                      Contact Us<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                   
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                  mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.3210101890018!2d-97.73587714092555!3d30.28492176241068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59b2584cfb7%3A0x8131ee4f174a21de!2sThe%20University%20of%20Texas%20at%20Austin!5e0!3m2!1sen!2s!4v1681981942966!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="box-cart-contact">
+                <div class="tf-cart-contact">
+                  <div class="inner-left">
+                    <span><i class="icon-phone"></i> Contact Our Phone</span>
+                  </div>
+                  <h3>+55 (9900) 666 22</h3>
+                </div>
+                <div class="tf-cart-contact">
+                  <div class="inner-left">
+                    <span><i class="icon-mail"></i>Contact Email</span>
+                  </div>
+                  <h3>info.mirpur@gmail.com</h3>
+                </div>
+                <div class="tf-cart-contact">
+                  <div class="inner-left">
+                    <span><i class="icon-location"></i>Contact Location</span>
+                  </div>
+                  <h3>14/4, Bonosri, USA.</h3>
+                </div>
+              </div>
+              <div class="wd-post-comment">
+                <div class="title-cmt">
+                  <h3>Send A Message</h3>
+                  <p>Nunc velit metus, volutpat elementum euismod eget, cursus nec nunc.</p>
+                </div>
+                <form method="post">
+                  <div class="group-input">
+                    <div class="input">
+                      <label>Your Name</label>
+                      <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input">
+                      <label>Your Mail</label>
+                      <input type="text" placeholder="infoflex@info.com">
+                    </div>
+                  </div>
+                  <div class="textarea">
+                    <label>Your Message</label>
+                    <textarea placeholder="Write Your Message"></textarea>
+                  </div>
+                  <p><span>*</span>&nbsp; Call us 24/7  or fill out the form below to receive a free and confidential initial consultation.</p>
+                  <button type="submit">
+                    Submit Now <span class="icon-arrow"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          
         </div>
+        
       </div>
+
     </div>
-  </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </section>
+    <!-- end -->
+    <!-- Footer -->
+    <footer>
+    <div class="footer">
+      <p>Copyright <a href="#">wedo</a>©2023. All rights reserved.</p>
+      <img class="logo-footer" src="images/logo-footer-light.jpg" alt="images">
+      <img class="logo-footer-dark" src="images/logo-footer-dark.png" alt="images">
+    </div>
+    </footer>
+    <!-- End footer -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="javascript/jquery.min.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <script src="javascript/typed.umd.js"></script>
+  <script src="javascript/countto.js"></script>
+  <script src="javascript/jquery.cookie.js"></script>
+  <script src="javascript/appear.js"></script>
+  <script src="javascript/plugins.js"></script>
+  <script src="javascript/splt.min.js"></script>
+  <script src="javascript/main.js"></script>
 </body>
 
 </html>
